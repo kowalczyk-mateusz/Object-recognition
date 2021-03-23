@@ -1,0 +1,32 @@
+body {
+  margin: 2rem;
+  padding: 0;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
+.imageContainer img {
+  width: 50%;
+  height: auto;
+}
+
+.imageContainer p {
+  position: absolute;
+  padding: 5px;
+  background-color: black;
+  color: #fff;
+  border: 1px solid black;
+  z-index: 1;
+  font-size: 1rem;
+}
+
+.objectBorder {
+  border: 1px solid red;
+  z-index: 1;
+  position: absolute;
+}
+/*# sourceMappingURL=style.css.map */
