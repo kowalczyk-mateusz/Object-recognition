@@ -53,3 +53,24 @@ function handleClick(e){
     })
 }
 
+
+const btn = document.querySelector('.btn')
+btn.addEventListener('click',()=>{
+    let allDivs = document.querySelectorAll('div')
+    let image = document.querySelector('.image')
+    let paragraphs = document.querySelectorAll('p')
+    console.log(paragraphs)
+    console.log(paragraphs.length)
+    let imageUrl = document.getElementById('imageUrl').value
+    allDivs.forEach(el =>{
+        if(el.classList.contains('objectBorder')){
+            let objectBorder = document.querySelector('.objectBorder')
+            objectBorder.remove();
+
+        }
+    })
+    if(paragraphs.length !== 0){
+        paragraphs.forEach(el => el.remove());
+    }
+    image.src = imageUrl
+})
